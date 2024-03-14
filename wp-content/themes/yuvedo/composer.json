@@ -55,6 +55,7 @@
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
+    "allow-plugins": true,
     "sort-packages": true
   },
   "minimum-stability": "dev",
