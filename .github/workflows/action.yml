@@ -2,7 +2,7 @@ name: Deploy to WP Engine
 env:
   WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
   WPE_INSTALL_NAME: yuvedostg
-  THEME_NAME: yuvedo-theme
+  THEME_NAME: yuvedo
 on:
   push:
     branches:
