@@ -43,8 +43,12 @@ jobs:
 
   php-build:
     runs-on: ubuntu-latest
-    container: gjrdiesel/composer-82:alpine
     steps:
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.2
 
     - name: Check out the git repo
       uses: actions/checkout@v2
