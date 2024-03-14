@@ -16,7 +16,7 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
-
+/wp-content/themes/*/vendor/
 # Configuration
 wp-config.php
 

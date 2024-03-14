@@ -1,16 +1,23 @@
-<form role="search" method="get" class="search-form" action="{{ home_url('/') }}">
-  <label>
-    <span class="sr-only">
-      {{ _x('Search for:', 'label', 'sage') }}
-    </span>
-
+<div class="bg-gray-200 border border-gray-300 rounded-lg">
+  <form role="search" method="get" class="search-form flex items-center max-w-sm mx-auto" action="{{ home_url('/') }}">
+    <button class="p-2 rounded-lg">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.5313 17.4688L15.9875 14.925C16.8091 13.8765 17.2538 12.582 17.25 11.25C17.25 10.0633 16.8981 8.90328 16.2388 7.91658C15.5795 6.92989 14.6425 6.16085 13.5461 5.70673C12.4497 5.2526 11.2433 5.13378 10.0795 5.36529C8.91557 5.5968 7.84648 6.16825 7.00736 7.00736C6.16825 7.84648 5.5968 8.91558 5.36529 10.0795C5.13378 11.2433 5.2526 12.4497 5.70673 13.5461C6.16085 14.6425 6.92989 15.5795 7.91658 16.2388C8.90328 16.8981 10.0633 17.25 11.25 17.25C12.582 17.2538 13.8765 16.8091 14.925 15.9875L17.4688 18.5313C17.6103 18.6709 17.8011 18.7493 18 18.7493C18.1989 18.7493 18.3897 18.6709 18.5313 18.5313C18.6012 18.4616 18.6566 18.3788 18.6945 18.2876C18.7324 18.1965 18.7518 18.0987 18.7518 18C18.7518 17.9013 18.7324 17.8036 18.6945 17.7124C18.6566 17.6212 18.6012 17.5384 18.5313 17.4688ZM6.75 11.25C6.75 10.36 7.01392 9.48996 7.50839 8.74994C8.00286 8.00992 8.70566 7.43314 9.52793 7.09254C10.3502 6.75195 11.255 6.66284 12.1279 6.83647C13.0008 7.0101 13.8026 7.43869 14.432 8.06802C15.0613 8.69736 15.4899 9.49918 15.6635 10.3721C15.8372 11.245 15.7481 12.1498 15.4075 12.9721C15.0669 13.7943 14.4901 14.4971 13.7501 14.9916C13.01 15.4861 12.14 15.75 11.25 15.75C10.057 15.7483 8.9134 15.2737 8.06985 14.4302C7.22629 13.5866 6.75166 12.443 6.75 11.25Z" fill="#0A0A12"/>
+        </svg>
+        <span class="sr-only">{{ _x('Search', 'submit button', 'sage') }}</span>
+    </button>
+    <label class="sr-only">
+      <span class="sr-only">
+        {{ _x('Search for:', 'label', 'sage') }}
+      </span>
+    </label>
     <input
       type="search"
       placeholder="{!! esc_attr_x('Search &hellip;', 'placeholder', 'sage') !!}"
       value="{{ get_search_query() }}"
       name="s"
-    >
-  </label>
+      class=" text-gray-900 text-sm rounded-lg focus:border-primary block w-full ps-10 p-2.5 placeholder-gray-400"
+    />
+    </form>
+</div>
 
-  <button>{{ _x('Search', 'submit button', 'sage') }}</button>
-</form>

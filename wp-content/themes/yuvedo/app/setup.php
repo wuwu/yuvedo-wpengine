@@ -7,6 +7,7 @@
 namespace App;
 
 use function Roots\bundle;
+use Sage\Container\Container;
 
 /**
  * Register the theme assets.
@@ -32,6 +33,7 @@ add_action('enqueue_block_editor_assets', function () {
  * @return void
  */
 add_action('after_setup_theme', function () {
+
     /**
      * Enable features from the Soil plugin if activated.
      *
@@ -42,6 +44,7 @@ add_action('after_setup_theme', function () {
         'nav-walker',
         'nice-search',
         'relative-urls',
+        'js-to-footer',
     ]);
 
     /**
@@ -58,6 +61,7 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_navigation' => __('Footer Navigation', 'sage'),
     ]);
 
     /**
@@ -126,11 +130,26 @@ add_action('widgets_init', function () {
 
     register_sidebar([
         'name' => __('Primary', 'sage'),
-        'id' => 'sidebar-primary',
+        'id' => 'primary-widget',
+    ] + $config);
+
+    register_sidebar([
+        'name' => __('Header', 'sage'),
+        'id' => 'header-widget',
     ] + $config);
 
     register_sidebar([
         'name' => __('Footer', 'sage'),
-        'id' => 'sidebar-footer',
+        'id' => 'footer-widget',
     ] + $config);
 });
+
+add_action( 'wp_enqueue_scripts', function (){
+    wp_register_style( 'inter', 'https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap' );
+    wp_enqueue_style('style', get_stylesheet_uri(), array('inter'), '1.0', 'all');
+} );
+
+
+
+
+

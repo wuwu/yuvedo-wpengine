@@ -1,3 +1,61 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply tracking-tight bg-gray-100;
+  background-image: "../images/yuvedo_logo_footer.png";
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  /* background: rgba(237,237,241, .55); */
+/* background: linear-gradient(308deg, rgba(237,237,241,0.29735644257703087) 2%, rgba(9,9,121,0.2553396358543417) 26%, rgba(170,203,223,1) 51%, rgba(0,212,255,0.14329481792717091) 75%, rgba(204,204,224,1) 98%); */
+}
+
+.nav {
+    @apply flex list-none;
+}
+
+.nav-primary .menu-item {
+    padding-right: 16px;
+}
+
+.nav-primary a {
+  @apply font-semibold hover:text-primaryhover;
+}
+
+
+h1, h2 , h3 {
+    @apply font-medium;
+}
+
+.nav-footer a {
+    @apply hover:text-primaryhover pl-4;
+}
+
+.featured-image {
+  @apply object-cover rounded-lg w-full;
+}
+
+ul{
+  @apply list-disc list-inside;
+}
+
+ul.nav, ul.sub-menu {
+  @apply list-none;
+}
+
+article.post-full a {
+  @apply underline font-semibold hover:text-primaryhover;
+}
+
+.widget_polylang{
+  @apply bg-white border border-gray-300 rounded-lg py-2.5 px-4;
+}
+
+
+
+header .widget_search,
+header .widget_polylang {
+  @apply hidden md:block;
+}
