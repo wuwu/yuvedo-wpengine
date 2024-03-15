@@ -43,6 +43,7 @@
     "php": "^8.0",
     "composer/installers": "^1.11",
     "log1x/sage-directives": "^2.0",
+    "log1x/navi": "^2.0",
     "soberwp/controller": "^2.1",
     "roots/acorn": "^3.3",
     "roots/acorn-prettify": "^1.0"
