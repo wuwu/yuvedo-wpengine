@@ -10,6 +10,7 @@
 /wp-content/languages
 /wp-content/plugins/index.php
 /wp-content/themes/index.php
+/wp-content/cache
 /wp-includes/
 /index.php
 /license.txt
@@ -17,6 +18,7 @@
 /wp-*.php
 /xmlrpc.php
 /wp-content/themes/**/vendor/
+/wp-content/themes/yuvedo/public/
 # Configuration
 wp-config.php
 
