@@ -1,4 +1,4 @@
-<header class="fixed top-12 left-0 w-full  z-50">
+<header class="fixed top-0 md:top-12 left-0 w-full  z-50">
   <div class="lg:mx-8  px-6 lg:px-8 opacity-90 bg-white  rounded-lg">
     <div  class="flex justify-between items-center h-16 md:h-24 ">
       <div class="logo logo-yuvedo flex-shrink-0">

@@ -4,8 +4,8 @@
 
 
 body {
-  @apply tracking-tight bg-gray-100;
-  background-image: "../images/yuvedo_logo_footer.png";
+  @apply tracking-tight bg-gray-100 text-base leading-tight;
+  background-image: url("../images/bg-circle.svg");
   background-size: 100% 100%;
   background-attachment: fixed;
   /* background: rgba(237,237,241, .55); */
@@ -27,6 +27,22 @@ body {
 
 h1, h2 , h3 {
     @apply font-medium;
+}
+
+h3 {
+  @apply text-3xl mb-4;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+.subheadline {
+  @apply text-2xl my-4 text-center text-gray-400;
 }
 
 .nav-footer a {
@@ -66,4 +82,73 @@ header .widget_polylang {
 
 .btn-primary {
   @apply bg-primary text-white;
+}
+
+
+/* styles for kontakt page */
+
+.kontakt .kontakt-copy {
+  @apply p-4 my-6 bg-gray-300;
+}
+
+.kontakt .form-title {
+  @apply pt-8 pb-4;
+}
+
+
+
+.yuvedo-form .row {
+  @apply flex gap-4;
+}
+
+.yuvedo-form p,
+.yuvedo-form textarea {
+  @apply w-full;
+}
+
+.yuvedo-form .row .basis-50 {
+  @apply basis-full md:basis-1/2;
+}
+
+.yuvedo-form label {
+  @apply block uppercase tracking-wide text-gray-700 text-xs font-bold;
+}
+
+.yuvedo-form input[type="text"],
+.yuvedo-form input[type="email"],
+.yuvedo-form input[type="tel"] {
+  @apply appearance-none block w-full bg-white text-gray-600 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:border-primary focus:outline-none focus:text-black;
+}
+.kontakt input[type="radio"] {
+  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+}
+.kontakt input[type="submit"] {
+  @apply bg-primary p-4 rounded-md text-white mt-2;
+}
+
+
+/* Spenden */
+.page-template-template-spenden p {
+  @apply pb-1 md:pb-3;
+}
+.page-template-template-spenden h2 {
+  @apply pb-2 md:pb-4;
+}
+
+.page-template-template-spenden .cta {
+  @apply text-white bg-primary hover:bg-primaryhover focus:outline-none focus:ring-4 focus:ring-primary font-medium rounded-full text-md px-5 py-2.5 text-center my-3
+}
+.page-template-template-spenden .is-layout-flex {
+  align-items: flex-start !important;
+}
+
+.page-template-template-spenden .is-layout-flex {
+  align-items: flex-start !important;
+  @apply flex-wrap md:flex-nowrap !important;
+}
+.page-template-template-spenden .col-right {
+  @apply rounded-md;
+}
+.page-template-template-spenden li {
+  @apply pb-2 ml-4 list-outside;
 }

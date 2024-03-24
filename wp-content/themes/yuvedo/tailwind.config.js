@@ -21,6 +21,13 @@ const config = {
       fontFamily: {
         "inter": ['Inter', 'sans-serif']
       },
+      fontSize: {
+        sm: ['14px', '20px'],
+        base: ['16px', '24px'],
+        md: ['20px', '24px'],
+        lg: ['24px', '28px'],
+        xl: ['32px', '36px'],
+      },
       fontWeight: {
         normal: '400',
         medium: '500',

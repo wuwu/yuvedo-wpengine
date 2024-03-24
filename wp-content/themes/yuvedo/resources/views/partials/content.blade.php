@@ -13,6 +13,8 @@
     @php(the_excerpt())
     </div>
   </div>
+  @if (defined('WP_DEBUG') && WP_DEBUG)
     <h3 class="font-mono text-sky-400">content.blade.php</h3>
+  @endif
 
 </article>

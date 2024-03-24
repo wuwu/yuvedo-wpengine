@@ -6,8 +6,10 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    @include('partials.page-category-header')
+    @include('partials.page-header')
     @include('partials.category-posts')
   @endwhile
-  <h3 class="font-mono text-sky-400">page.blade.php</h3>
+  @if (defined('WP_DEBUG') && WP_DEBUG)
+    <h3 class="font-mono text-sky-400">template-category-overview.blade.php</h3>
+  @endif
 @endsection

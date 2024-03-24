@@ -17,7 +17,9 @@
   </div>
 
   {!! get_the_posts_navigation() !!}
-    <h3 class="font-mono text-sky-400">index.blade.php</h3>
+@if (defined('WP_DEBUG') && WP_DEBUG)
+  <h3 class="font-mono text-sky-400">index.blade.php</h3>
+@endif
 
 @endsection
 

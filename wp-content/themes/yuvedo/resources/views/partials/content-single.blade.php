@@ -18,5 +18,7 @@
   </footer>
 
   @php(comments_template())
-  <h3 class="font-mono text-sky-400">content-single.blade.php</h3>
+  @if (defined('WP_DEBUG') && WP_DEBUG)
+    <h3 class="font-mono text-sky-400">content-single.blade.php</h3>
+  @endif
 </article>

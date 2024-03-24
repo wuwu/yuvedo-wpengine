@@ -18,7 +18,7 @@ $theExcerpt = substr($excerpt, 0, strrpos($excerpt, ' '));
       <div class="h-auto w-auto pb-4 md:w-1/1">
         @php if(has_post_thumbnail()) { the_post_thumbnail('full',array('class' => 'project-teaser-image object-cover rounded-lg') ); } @endphp
       </div>
-      <h3 class="entry-title pb-4 text-lg">{!! get_the_title() !!}</h3>
+      <h3 class="entry-title pb-4 text-md">{!! get_the_title() !!}</h3>
       <p>{{ $theExcerpt}}</p>
       <div class="inline-flex items-center">
         <a href="{{ get_permalink() }}" class="border-solid border-2 border-primary rounded-md font-semibold text-primary px-4 py-2 mt-2 hover:text-white hover:border-primaryhover hover:bg-primaryhover">{{  pll__('Read More') }}</a>

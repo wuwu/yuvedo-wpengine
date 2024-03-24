@@ -1349,22 +1349,22 @@
         },
         {
           "name": "sm",
-          "size": "0.875rem",
+          "size": "14px",
           "slug": "sm"
         },
         {
           "name": "base",
-          "size": "1rem",
+          "size": "16px",
           "slug": "base"
         },
         {
           "name": "lg",
-          "size": "1.125rem",
+          "size": "24px",
           "slug": "lg"
         },
         {
           "name": "xl",
-          "size": "1.25rem",
+          "size": "32px",
           "slug": "xl"
         },
         {
@@ -1406,6 +1406,11 @@
           "name": "9xl",
           "size": "8rem",
           "slug": "9xl"
+        },
+        {
+          "name": "md",
+          "size": "20px",
+          "slug": "md"
         }
       ]
     }
