@@ -1,0 +1,44 @@
+[radio radio-betreff use_label_element default:1 "Allgemeines Feedback oder Frage an die Yuvedo Foundation" "Bewerbung
+bei der Yuvedo Foundation"]
+<div class="row">
+  <label> Firma (optional)
+    [text Firma placeholder "Firma"]
+  </label>
+</div>
+<div class="row">
+  <div class="basis-50">
+    <label>Vorname
+      [text* vorname placeholder "Vorname"]
+    </label>
+  </div>
+  <div class="basis-50">
+    <label>Name
+      [text* your-name placeholder "Name" ]
+    </label>
+  </div>
+</div>
+<div class="row">
+  <div class="basis-50">
+    <label> Email
+      [email* Email autocomplete:email placeholder "E-Mail"]
+    </label>
+</div>
+  <div class="basis-50">
+    <label> Telefon (optional)
+      [email Telefon autocomplete:telefon]
+    </label>
+  </div>
+</div>
+<div class="row">
+  <label> Betreff
+    [text* your-subject]
+  </label>
+</div>
+<div class="row">
+  <label> Nachricht (optional)
+    [textarea your-message]
+  </label>
+</div>
+<div class="row">
+  [submit "Absenden"]
+</div>
